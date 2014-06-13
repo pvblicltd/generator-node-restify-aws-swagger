@@ -1,6 +1,9 @@
-# generator-madlib-restify-api [![Build Status](https://secure.travis-ci.org/Qwerios/generator-madlib-restify-api.png?branch=master)](https://travis-ci.org/Qwerios/generator-madlib-restify-api)
+# generator-madlib-restify-api
+[![Build Status](https://travis-ci.org/Qwerios/generator-madlib-restify-api.svg?branch=master)](https://travis-ci.org/Qwerios/generator-madlib-restify-api)  [![NPM version](https://badge.fury.io/js/generator-madlib-restify-api.png)](http://badge.fury.io/js/generator-madlib-restify-api)
 
-> [Yeoman](http://yeoman.io) generator
+[![Npm Downloads](https://nodei.co/npm/generator-madlib-restify-api.png?downloads=true&stars=true)](https://nodei.co/npm/generator-madlib-restify-api.png?downloads=true&stars=true)
+
+A [Yeoman](http://yeoman.io) based generator for a restify based API project. Includes a madlib XDM provider, swagger based documentation, winston based logger and json based configuration file that is generated on first run.
 
 
 ## Getting Started
