@@ -1,6 +1,6 @@
 {
   "name": "generator-madlib-restify-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Yeoman based generator for restify based API",
   "license": "MIT",
   "main": "app/index.js",
