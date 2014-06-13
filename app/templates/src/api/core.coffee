@@ -71,11 +71,8 @@ module.exports = class API
         swagger.configure( server,
             info:
                 contact:        "admin@localhost"
-                description:    "The server API for the <%= _.slugify(packageName) %>"
-                title:          "<%= _.slugify(packageName) %> API"
-            apiDescriptions:
-                get:            "GET Resources"
-                post:           "POST Resources"
+                description:    "<%= packageDescription %>"
+                title:          "The <%= _.slugify(packageName) %> API"
         )
 
         # The server handlers contains the actually call implementations so

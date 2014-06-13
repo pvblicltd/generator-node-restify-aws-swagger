@@ -69,7 +69,7 @@ var MadlibRestifyApiGenerator = yeoman.generators.Base.extend({
   {
     // Create base folders
     //
-    this.mkdir( "log" );
+    this.directory( "log", "log" );
     this.directory( "src", "src" );
     this.directory( "static_content", "static_content" );
 
