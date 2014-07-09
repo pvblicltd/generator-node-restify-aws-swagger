@@ -35,11 +35,6 @@ module.exports = class API
         #
         socketServer = io.listen( server )
 
-        socketServer.set( "log level", 1 )
-        socketServer.enable( "browser client minification" )
-        socketServer.enable( "browser client etag"         )
-        socketServer.enable( "browser client gzip"         )
-
         # Activate the required middle ware
         #
         server.use( restify.acceptParser( server.acceptable ) )
