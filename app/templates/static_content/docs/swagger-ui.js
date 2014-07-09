@@ -1974,7 +1974,8 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
       $(".response", $(this.el)).slideDown();
       $(".response_hider", $(this.el)).show();
       $(".response_throbber", $(this.el)).hide();
-      return hljs.highlightBlock($('.response_body', $(this.el))[0]);
+      // return hljs.highlightBlock($('.response_body', $(this.el))[0]);
+      return $('.response_body', $(this.el))[0];
     };
 
     OperationView.prototype.toggleOperationContent = function() {
