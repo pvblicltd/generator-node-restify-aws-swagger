@@ -1,1 +1,1 @@
-This folder contains the winston logging output (JSON format)
+This folder contains the logging output (JSON format)

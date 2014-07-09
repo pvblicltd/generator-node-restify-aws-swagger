@@ -3,7 +3,7 @@
 
 [![Npm Downloads](https://nodei.co/npm/generator-madlib-restify-api.png?downloads=true&stars=true)](https://nodei.co/npm/generator-madlib-restify-api.png?downloads=true&stars=true)
 
-A [Yeoman](http://yeoman.io) based generator for a restify based API project. Includes a madlib XDM provider, swagger based documentation, winston based logger and json based configuration file that is generated on first run.
+A [Yeoman](http://yeoman.io) based generator for a restify based API project. Includes a madlib XDM provider, swagger based documentation, bunyan based logger and json based configuration file that is generated on first run.
 
 
 ## Getting Started
