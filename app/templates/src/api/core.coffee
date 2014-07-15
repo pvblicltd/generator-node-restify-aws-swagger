@@ -112,6 +112,18 @@ module.exports = class API
         #
         swagger.loadRestifyRoutes()
 
+        # Setup the error logging
+        #
+        server.on( "uncaughtException", ( request, response, route, error ) ->
+            # Log the error details
+            #
+            logger.error( "[ERROR]", error.stack )
+
+            # Don't leak error details to the client
+            #
+            response.send( 500, "Internal server error" )
+        )
+
         # Start the API server
         #
         logger.info( "[API] I'm awake. Listening on #{@port}" )
