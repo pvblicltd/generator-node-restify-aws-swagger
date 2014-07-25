@@ -8,6 +8,17 @@ A [Yeoman](http://yeoman.io) based generator for a restify based API project. In
 
 ## Getting Started
 
+*This generator is still a work in progress but it is usable.*
+
+I'm currently working on adding a choice between CoffeeScript and JavaScript. The choice option works but all the JavaScript generated are just straight CofffeeScript compilations. Once I find some time I'll recode them by hand and document them as needed.
+
+There is a sub-generator for added API routes called 'route'. This will generate a file that can be included in the api/core to enable the route. By default a responseModel with the chosen name is also added to the models folder.
+
+Validation uses: https://github.com/z0mt3c/node-restify-validation
+
+API documentation is based on Swagger: https://github.com/wordnik/swagger-spec
+
+
 ### What is Yeoman?
 
 Trick question. It's not a thing. It's this guy:
