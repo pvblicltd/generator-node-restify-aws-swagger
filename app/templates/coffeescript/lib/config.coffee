@@ -18,7 +18,7 @@ if fs.existsSync( "config.json" )
 else
     # Use the template file to create a new configuration
     #
-    config = jsonfile.readFileSync( "src/config-template.json" )
+    config = jsonfile.readFileSync( "lib/config-template.json" )
 
     # Write the new configuration to disk in one go
     #

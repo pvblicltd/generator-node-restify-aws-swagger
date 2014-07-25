@@ -14,7 +14,7 @@
         "madlib-xdm-provider": "^0.1.2",
         "moment": "^2.7.0",
         "node-restify-swagger": "^0.1.6",
-        "node-restify-validation": "0.0.7",
+        "node-restify-validation": "^0.1.0",
         "q": "^1.0.1",
         "restify": "^2.8.1",
         "socket.io": "~1.0.6"

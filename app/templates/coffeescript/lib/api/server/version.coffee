@@ -1,4 +1,5 @@
-Q = require "q"
+Q                    = require "q"
+versionResponseModel = require "../../models/versionResponse"
 
 module.exports = ( server, swagger, logger, implementations ) ->
 
@@ -36,21 +37,7 @@ module.exports = ( server, swagger, logger, implementations ) ->
 
         validation:     {}
         models:
-            versionResponse:
-                id: "versionResponse"
-                properties:
-                    name:
-                        type:           "string"
-                        description:    "The server software package name"
-                        required:       true
-                    version:
-                        type:           "string"
-                        description:    "The server software version"
-                        required:       true
-                    description:
-                        type:           "string"
-                        description:    "The server software description"
-                        required:       true
+            versionResponse:            versionResponseModel
     ,
         ( request, response, next ) ->
             implementations.version()

@@ -1,5 +1,6 @@
-moment = require "moment"
-Q      = require "q"
+moment                  = require "moment"
+Q                       = require "q"
+datetimeResponseModel   = require "../../models/datetimeResponse"
 
 module.exports = ( server, swagger, logger, implementations ) ->
 
@@ -33,23 +34,11 @@ module.exports = ( server, swagger, logger, implementations ) ->
             responseMessages: [
                 code:                   200
                 message:                "Success"
-                responseModel:          "timeResponse"
+                responseModel:          "datetimeResponse"
             ]
 
-        validation:     {}
-        models:
-            timeResponse:
-                id: "time"
-                properties:
-                    datetime:
-                        type:           "integer"
-                        format:         "int64"
-                        description:    "Current server time. Format is Unix time-stamp."
-                        required:       true
-                    formatted:
-                        type:           "string"
-                        description:    "ISO8601 Formatted date time"
-                        required:       true
+        validation:                     {}
+        models:                         datetimeResponseModel
     ,
         ( request, response, next ) =>
             implementations.datetime()
