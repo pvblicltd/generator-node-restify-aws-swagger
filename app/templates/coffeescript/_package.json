@@ -12,6 +12,7 @@
         "lodash": "^2.4.1",
         "madlib-object-utils": "^0.1.6",
         "madlib-xdm-provider": "^0.1.2",
+        "madlib-settings": "^0.1.7",
         "moment": "^2.7.0",
         "node-restify-swagger": "^0.1.6",
         "node-restify-validation": "^0.1.0",
