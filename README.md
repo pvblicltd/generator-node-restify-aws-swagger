@@ -12,16 +12,18 @@ Validation uses: https://github.com/z0mt3c/node-restify-validation
 
 API documentation is based on Swagger: https://github.com/wordnik/swagger-spec
 
-Unit testing is done with Mocha
+Unit testing is done with Mocha: https://github.com/mochajs/mocha
+Assertion library used is chai: https://github.com/chaijs/chai
 
-Code coverage is done with blanket.js
+Code coverage is done with blanket.js: https://github.com/alex-seville/blanket/
+With the mocha cobertura reporter: https://github.com/sjonnet19/mocha-cobertura-reporter
 
 The GruntFile will produce an output that can be hooked up to a Jenkins project.
 Artifacts end up in: dist/artifacts
 Unit test results are in dist/coverage/test-results.xml
 Coverage report is in dist/coverage/coverage.xml
 
-You need the cobertura plugin installed on Jenkins for the coverage report result. An HTML version is also generated of the coverage report in dist/coverage/coverage.html.
+You need the cobertura plugin installed on Jenkins for the coverage report result to show in your project. An HTML version is also generated of the coverage report in dist/coverage/coverage.html.
 
 The script to build in jenkins would be:
 ```bash
@@ -29,9 +31,9 @@ npm install
 npm test
 ```
 
-During development you can get a console based unit test result with `grunt test`. The `npm test` script is hooked up to the `grunt coverage` tasks to generate all the reports and result files for a Jenkins build.
+During development you can get a console based unit test result with `grunt test`. The `npm test` script is hooked up to the `grunt coverage` tasks to generate all the reports and coverage files for a Jenkins project.
 
-This generator used to have a JavaScript instead of CoffeeScript option. I decided to take it out because it became too much work to maintain both variant and I didn't really use the pure JavaScript version myself. So any code or updates I wrote would only be tested for the CoffeeScript version.
+This generator used to have a JavaScript alongside the CoffeeScript option. I decided to take it out because it became too much work to maintain both variants and I didn't really use the pure JavaScript version myself. So any code or updates I wrote would only be tested for the CoffeeScript version.
 
 ### What is Yeoman?
 
