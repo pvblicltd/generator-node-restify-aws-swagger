@@ -56,26 +56,13 @@ var MadlibRestifyApiRouteGenerator = yeoman.generators.Base.extend(
 
   route: function()
   {
-    if ( this.config.get( "coffee" ) === true )
-    {
-      // Copy the model file
-      //
-      this.copy( "coffeescript/model.coffee", "lib/models/" + this.routeName + "Response.coffee" );
+    // Copy the model file
+    //
+    this.copy( "model.coffee", "lib/models/" + this.routeName + "Response.coffee" );
 
-      // Copy the route implementation for the correct method
-      //
-      this.copy( "coffeescript/api-" + this.routeMethod + ".coffee", "lib/api/" + this.routeSection +  "/" + this.routeName + ".coffee" );
-    }
-    else
-    {
-      // Copy the model file
-      //
-      this.copy( "javascript/model.js", "lib/models/" + this.routeName + ".js" );
-
-      // Copy the route implementation for the correct method
-      //
-      this.copy( "javascript/api-" + this.routeMethod + ".js", "lib/api/" + this.routeSection +  "/" + this.routeName + ".js" );
-    }
+    // Copy the route implementation for the correct method
+    //
+    this.copy( "api-" + this.routeMethod + ".coffee", "lib/api/" + this.routeSection +  "/" + this.routeName + ".coffee" );
   }
 } );
 
