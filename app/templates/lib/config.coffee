@@ -41,11 +41,11 @@ else
 
 # Setup file watch for config changes
 #
-fs.watchFile( configFilename, ( mtimeCurrent, mtimePrevious ) ->
-    if settings.get( "reload-config-runtime" ) is true
+if settings.get( "reload-config-runtime" ) is true
+    fs.watchFile( configFilename, ( mtimeCurrent, mtimePrevious ) ->
         logger.info( "[CONFIG] Reloading config due to file change", configFilename )
         settings.reload()
-)
+    )
 
 # Expose the module
 #

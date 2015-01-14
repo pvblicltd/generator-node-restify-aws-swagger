@@ -1,0 +1,13 @@
+{
+  "reload-config-runtime":  true,
+  "log-level":              "warn",
+
+  "api-port":               8080,
+  "api-host":               "localhost",
+  "api-protocol":           "http",
+
+  "database-port":          5984,
+  "database-host":          "localhost",
+  "database-username":      "admin",
+  "database-password":      "secret"
+}

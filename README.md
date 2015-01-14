@@ -8,16 +8,30 @@ A [Yeoman](http://yeoman.io) based generator for a restify based API project. In
 
 ## Getting Started
 
-*This generator is still a work in progress but it is usable.*
-
-I'm currently working on adding a choice between CoffeeScript and JavaScript. The choice option works but all the JavaScript generated are just straight CofffeeScript compilations. Once I find some time I'll recode them by hand and document them as needed.
-
-There is a sub-generator for added API routes called 'route'. This will generate a file that can be included in the api/core to enable the route. By default a responseModel with the chosen name is also added to the models folder.
-
 Validation uses: https://github.com/z0mt3c/node-restify-validation
 
 API documentation is based on Swagger: https://github.com/wordnik/swagger-spec
 
+Unit testing is done with Mocha
+
+Code coverage is done with blanket.js
+
+The GruntFile will produce an output that can be hooked up to a Jenkins project.
+Artifacts end up in: dist/artifacts
+Unit test results are in dist/coverage/test-results.xml
+Coverage report is in dist/coverage/coverage.xml
+
+You need the cobertura plugin installed on Jenkins for the coverage report result. An HTML version is also generated of the coverage report in dist/coverage/coverage.html.
+
+The script to build in jenkins would be:
+```bash
+npm install
+npm test
+```
+
+During development you can get a console based unit test result with `grunt test`. The `npm test` script is hooked up to the `grunt coverage` tasks to generate all the reports and result files for a Jenkins build.
+
+This generator used to have a JavaScript instead of CoffeeScript option. I decided to take it out because it became too much work to maintain both variant and I didn't really use the pure JavaScript version myself. So any code or updates I wrote would only be tested for the CoffeeScript version.
 
 ### What is Yeoman?
 
