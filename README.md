@@ -37,7 +37,7 @@ There is a sub-generator available to create new routes of the API. Run `yo madl
 
 ### CoffeeScript based
 
-This generator used to have a JavaScript alongside the CoffeeScript option. I decided to take it out because it became too much work to maintain both variants and I didn't really use the pure JavaScript version myself. So any code or updates I wrote would only be tested for the CoffeeScript version.
+This generator used to have a JavaScript or CoffeeScript choice option. I decided to take it out because it became too much work to maintain both variants and I didn't really use the pure JavaScript version myself. So any code or updates I wrote would only be tested for the CoffeeScript version.
 
 ### What is Yeoman?
 
