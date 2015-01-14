@@ -33,6 +33,10 @@ npm test
 
 During development you can get a console based unit test result with `grunt test`. The `npm test` script is hooked up to the `grunt coverage` tasks to generate all the reports and coverage files for a Jenkins project.
 
+There is a sub-generator available to create new routes of the API. Run `yo madlib-restify-api:route` to start it.
+
+### CoffeeScript based
+
 This generator used to have a JavaScript alongside the CoffeeScript option. I decided to take it out because it became too much work to maintain both variants and I didn't really use the pure JavaScript version myself. So any code or updates I wrote would only be tested for the CoffeeScript version.
 
 ### What is Yeoman?
