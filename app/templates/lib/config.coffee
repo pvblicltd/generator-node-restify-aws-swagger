@@ -9,8 +9,8 @@ logger      = require "./logger"
 configFilename    = "config.json"
 templateFilename  = "lib/config-template.json"
 nodeEnvironment   = process.env.NODE_ENV
-configFilename    = "config-#{nodeEnvironment}.json" if fs.existsSync( "config-#{nodeEnvironment}.json"              )
-templateFilename  = "config-#{nodeEnvironment}.json" if fs.existsSync( "lib/config-template-#{nodeEnvironment}.json" )
+configFilename    = "config-#{nodeEnvironment}.json"          if fs.existsSync( "config-#{nodeEnvironment}.json"              )
+templateFilename  = "config-template-#{nodeEnvironment}.json" if fs.existsSync( "lib/config-template-#{nodeEnvironment}.json" )
 
 # Madlib-settings provides us with the interface we need for general settings
 # management. We just need to amend it with save/reload support
