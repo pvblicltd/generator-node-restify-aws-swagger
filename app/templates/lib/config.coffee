@@ -20,6 +20,12 @@ settings.reload = () ->
     #
     settings._setRaw( _.merge( {}, jsonfile.readFileSync( templateFilename ), jsonfile.readFileSync( configFilename ) ) )
 
+    # Set log level
+    #
+    logLevel = settings.get( "log-level", "info" )
+    logger.level( logLevel )
+    logger.debug( "[CONFIG] Current log level: #{logLevel.toUpperCase()}")
+
 settings.save = () ->
     logger.info( "[CONFIG] Writing settings to disk", configFilename )
     jsonfile.writeFileSync( configFilename, settings._raw() )
