@@ -33,7 +33,7 @@ npm test
 
 During development you can get a console based unit test result with `grunt test`. The `npm test` script is hooked up to the `grunt coverage` tasks to generate all the reports and coverage files for a Jenkins project.
 
-There is a sub-generator available to create new routes of the API. Run `yo madlib-restify-api:route` to start it.
+There is a sub-generator available to create new routes of the API. Run `yo node-restify-aws-swagger:route` to start it.
 
 ### CoffeeScript based
 
@@ -60,13 +60,13 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 To install generator-madlib-restify-api from npm, run:
 
 ```bash
-$ npm install -g generator-madlib-restify-api
+$ npm install -g node-restify-aws-swagger
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo madlib-restify-api
+$ yo node-restify-aws-swagger
 ```
 
 ### Getting To Know Yeoman
