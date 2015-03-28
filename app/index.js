@@ -32,7 +32,7 @@ var MadlibRestifyApiGenerator = yeoman.generators.Base.extend(
 
         // Have Yeoman greet the user.
         //
-        this.log( yosay( "Welcome to the Madlib Restify API generator!" ) );
+        this.log( yosay( "Welcome to the Pvblic Ltd Restify, AWS & Swagger API generator!" ) );
 
         // Ask the user for the webapp details
         //
@@ -83,7 +83,7 @@ var MadlibRestifyApiGenerator = yeoman.generators.Base.extend(
         this.directory( "lib",              "lib"                   );
         this.template(  "_package.json",    "package.json"          );
         this.copy(      "index.js",         "index.js"              );
-        this.copy(      "GruntFile.coffee", "GruntFile.coffee"      );
+        this.copy(      "GruntFile.js", "GruntFile.js"      );
     },
 
     projectfiles: function ()
