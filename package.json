@@ -1,6 +1,6 @@
 {
   "name": "generator-node-restify-aws-swagger",
-  "version": "0.1.1",
+  "version": "0.1.12",
   "description": "Yeoman based generator for restify based API that includes AWS SDK & Swagger documentation & Sub generators",
   "license": "MIT",
   "main": "app/index.js",

@@ -3,5 +3,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-madlib-restify-api' ]; then cd .. && eval "mv $currentfolder generator-madlib-restify-api" && cd generator-madlib-restify-api; fi
+  - if [ "$currentfolder" != 'generator-node-restify-aws-swagger' ]; then cd .. && eval "mv $currentfolder generator-node-restify-aws-swagger" && cd generator-node-restify-aws-swagger; fi
 

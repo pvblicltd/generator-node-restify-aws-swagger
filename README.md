@@ -1,5 +1,5 @@
 # generator-madlib-restify-api
-[![Build Status](https://travis-ci.org/Qwerios/generator-madlib-restify-api.svg?branch=master)](https://travis-ci.org/Qwerios/generator-madlib-restify-api)  [![NPM version](https://badge.fury.io/js/generator-madlib-restify-api.png)](http://badge.fury.io/js/generator-madlib-restify-api)
+[![Build Status](https://travis-ci.org/pvblicltd/generator-madlib-restify-api.svg?branch=master)](https://travis-ci.org/Qwerios/generator-madlib-restify-api)  [![NPM version](https://badge.fury.io/js/generator-madlib-restify-api.png)](http://badge.fury.io/js/generator-madlib-restify-api)
 
 [![Npm Downloads](https://nodei.co/npm/generator-madlib-restify-api.png?downloads=true&stars=true)](https://nodei.co/npm/generator-madlib-restify-api.png?downloads=true&stars=true)
 
