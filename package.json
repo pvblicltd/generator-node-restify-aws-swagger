@@ -1,15 +1,15 @@
 {
-  "name": "generator-madlib-restify-api",
-  "version": "0.2.3",
-  "description": "Yeoman based generator for restify based API",
+  "name": "yo-node-restify-aws-swagger",
+  "version": "0.1.0",
+  "description": "Yeoman based generator for restify based API that includes AWS SDK & Swagger documentation & Sub generators",
   "license": "MIT",
   "main": "app/index.js",
-  "homepage": "https://github.com/Qwerios/generator-madlib-restify-api",
-  "repository": "Qwerios/generator-madlib-restify-api",
+  "homepage": "https://github.com/pvblicltd/yo-node-restify-aws-swagger",
+  "repository": "pvblicltd/yo-node-restify-aws-swagger",
   "author": {
-    "name": "Mark Doeswijk",
-    "email": "mdoeswijk@gmail.com",
-    "url": "https://github.com/Qwerios"
+    "name": "James A B Gray",
+    "email": "jbg@pvblic.co",
+    "url": "https://github.com/pvblicltd"
   },
   "engines": {
     "node": ">=0.10.0"
