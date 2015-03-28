@@ -1,16 +1,15 @@
 {
-  "name": "yo-node-restify-aws-swagger",
+  "name": "generator-node-restify-aws-swagger",
   "version": "0.1.0",
   "description": "Yeoman based generator for restify based API that includes AWS SDK & Swagger documentation & Sub generators",
   "license": "MIT",
   "main": "app/index.js",
-  "homepage": "https://github.com/pvblicltd/yo-node-restify-aws-swagger",
-  "repository": "pvblicltd/yo-node-restify-aws-swagger",
-  "author": {
-    "name": "James A B Gray",
-    "email": "jbg@pvblic.co",
-    "url": "https://github.com/pvblicltd"
+  "homepage": "https://github.com/pvblicltd/generator-node-restify-aws-swagger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pvblicltd/generator-node-restify-aws-swagger"
   },
+  "author": "James A B Gray <jbg@pvblic.co> (https://github.com/pvblicltd)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -33,5 +32,11 @@
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/pvblicltd/generator-node-restify-aws-swagger/issues"
+  },
+  "directories": {
+    "test": "test"
   }
 }
