@@ -3,14 +3,14 @@
 var path = require('path');
 var helpers = require('yeoman-generator').test;
 
-describe('madlib-restify-api generator', function () {
+describe('node-restify-aws-swagger generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('madlib-restify-api:app', [
+      this.app = helpers.createGenerator('node-restify-aws-swagger:app', [
         '../../app'
       ]);
       done();
