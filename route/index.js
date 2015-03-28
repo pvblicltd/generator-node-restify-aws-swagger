@@ -5,7 +5,7 @@ var yeoman = require( "yeoman-generator" );
 var yosay  = require( "yosay"            );
 var chalk  = require( "chalk"            );
 
-var MadlibRestifyApiRouteGenerator = yeoman.generators.Base.extend(
+var nodeRestifyAwsSwaggerRouteGenerator = yeoman.generators.Base.extend(
 {
   askFor: function ()
   {
@@ -66,4 +66,4 @@ var MadlibRestifyApiRouteGenerator = yeoman.generators.Base.extend(
   }
 } );
 
-module.exports = MadlibRestifyApiRouteGenerator;
+module.exports = nodeRestifyAwsSwaggerRouteGenerator;
