@@ -36,19 +36,17 @@ module.exports = function(grunt) {
         mochaTest: {
             dev: {
                 options: {
-                    reporter: "spec",
-                    require: ["coffee-script/register", "test/blanket"]
+                    reporter: "spec"
                 },
-                src: ["test/unit/*.js", "test/unit/*.coffee", "test/api/*.js", "test/api/*.coffee", "test/route/*.js", "test/route/*.coffee"]
+                src: ["test/unit/*.js", "test/unit/*.js", "test/api/*.js", "test/api/*.js", "test/route/*.js", "test/route/*.js"]
             },
             "test-xunit": {
                 options: {
                     reporter: "xunit",
                     captureFile: "dist/coverage/test-results.xml",
-                    quiet: true,
-                    require: ["coffee-script/register", "test/blanket"]
+                    quiet: true
                 },
-                src: ["test/unit/*.js", "test/unit/*.coffee", "test/api/*.js", "test/api/*.coffee", "test/route/*.js", "test/route/*.coffee"]
+                src: ["test/unit/*.js", "test/unit/*.js", "test/api/*.js", "test/api/*.js", "test/route/*.js", "test/route/*.js"]
             },
             "coverage-cobertura": {
                 options: {
@@ -57,7 +55,7 @@ module.exports = function(grunt) {
                     quiet: true,
                     coverage: true
                 },
-                src: ["test/unit/*.js", "test/unit/*.coffee", "test/api/*.js", "test/api/*.coffee", "test/route/*.js", "test/route/*.coffee"]
+                src: ["test/unit/*.js", "test/unit/*.js", "test/api/*.js", "test/api/*.js", "test/route/*.js", "test/route/*.js"]
             },
             "coverage-html": {
                 options: {
@@ -66,7 +64,7 @@ module.exports = function(grunt) {
                     quiet: true,
                     coverage: true
                 },
-                src: ["test/unit/*.js", "test/unit/*.coffee", "test/api/*.js", "test/api/*.coffee", "test/route/*.js", "test/route/*.coffee"]
+                src: ["test/unit/*.js", "test/unit/*.js", "test/api/*.js", "test/api/*.js", "test/route/*.js", "test/route/*.js"]
             }
         }
     });

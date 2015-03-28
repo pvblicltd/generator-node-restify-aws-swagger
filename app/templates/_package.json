@@ -6,13 +6,9 @@
     },
     "contributors": [],
     "config": {
-        "blanket": {
-            "loader": "./node-loaders/coffee-script"
-        }
     },
     "dependencies": {
         "bunyan": "^1.2.3",
-        "coffee-script": "^1.8.0",
         "jsonfile": "^2.0.0",
         "lodash": "^2.4.1",
         "madlib-object-utils": "^0.1.6",

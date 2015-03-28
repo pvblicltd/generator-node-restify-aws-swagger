@@ -1,7 +1,3 @@
-// Add coffee-script support
-//
-require( "coffee-script/register" );
-
 // Collect command-line options and arguments
 //
 var args     = process.argv.slice( 2 );

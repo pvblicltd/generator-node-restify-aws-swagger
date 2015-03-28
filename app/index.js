@@ -10,7 +10,7 @@ var chalk  = require( "chalk"            );
 var fullPath    = process.cwd();
 var packageName = fullPath.split( path.sep ).pop()
 
-var MadlibRestifyApiGenerator = yeoman.generators.Base.extend(
+var pvblicRestifyAwsSwagger = yeoman.generators.Base.extend(
 {
     init: function ()
     {
@@ -96,4 +96,4 @@ var MadlibRestifyApiGenerator = yeoman.generators.Base.extend(
     }
 } );
 
-module.exports = MadlibRestifyApiGenerator;
+module.exports = pvblicRestifyAwsSwagger;
